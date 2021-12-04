@@ -1,0 +1,148 @@
+.my_skills .sk h2, .my_skills_2 h2 {
+  padding-top: .7em;
+  color: white;
+  text-align: center;
+}
+
+path {
+  /* stroke: #0d0d0d; */
+  stroke: #1B5E92;
+  /* stroke-width: 5px; */
+  cursor: pointer;
+  transition: fill 250ms;
+}
+path:hover {
+  /* stroke-width: 10px; */
+  fill: #fff;
+}
+
+text {
+font-size: 0.8em;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+polyline {
+  fill: none;
+  stroke: #fff;
+  stroke-width: 2px;
+  stroke-dasharray: 5px;
+}
+
+/* button {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  text-transform: uppercase;
+  cursor: pointer;
+  padding: 5px 10px;
+  outline: none;
+  font-size: 0.6em;
+  background-color: transparent;
+  color: #fff;
+  border: 1px solid #fff;
+  letter-spacing: 1px;
+  transition: all 250ms;
+} */
+
+button {
+  position: relative;
+  top: -480px;
+  left: 20px;
+  text-transform: uppercase;
+  cursor: pointer;
+  padding: 5px 10px;
+  outline: none;
+  font-size: 0.6em;
+  background-color: transparent;
+  color: #fff;
+  border: 1px solid #fff;
+  letter-spacing: 1px;
+  transition: all 250ms;
+}
+button:hover {
+  background-color: #fff;
+  color: #0d0d0d;
+  box-shadow: 0 0 2px #fff;
+}
+button:active {
+  opacity: 0.5;
+}
+
+@media screen and (min-width:1201px){
+  .my_skills_2 .container, .my_skills_2 h2 {
+    display: none;
+  }
+  .my_skills {
+    height: 520px;
+    background: #1B5E92;
+    
+  }
+  .sk{
+    height: 400px;
+    width: auto;
+  }
+  .chart-wrapper {
+    font-size: 20px;
+    font-weight: 700;
+    width: 100%;
+    height: 100%;
+    font-family: Montserrat;
+  }
+}
+
+
+@media screen and (max-width:1200px){
+  .my_skills, .my_skills .sk, .my_skills .sk h2, .my_skills .sk .chart-wrapper {
+    display: none;
+  }
+  .my_skills_2 {
+    /* height: 550px; */
+    /* display: block; */
+    /* background: url(https://images.unsplash.com/photo-1519681393784-d120267933ba?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80); */
+    background: #1B5E92;
+    backdrop-filter: blur(80px) saturate(180%);
+    background-position: right;
+    background-size: cover;
+  }
+  .my_skills_2 h2 {
+    color: white;
+  }
+  .my_skills_2 .container{
+    /* position: relative; */
+    /* top: -45px; */
+    color:white;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-gap:7px;
+    padding: 25px 10px;
+  }
+  .each_item {
+    /* position: relative; */
+    padding: 15px 15px 15px;
+    text-align: center;
+    overflow: hidden;
+    border-radius: 9px;
+  
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(255, 255, 255, 0.75);
+    border: 1px solid rgba(209, 213, 219, 0.3);
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    text-shadow: 2px 1px 3px #879aa3e5;
+    color:rgb(38, 112, 209);
+    font-size: 18px;
+  } 
+.each_item:hover {
+  background: rgb(32, 27, 18);
+  border: none;
+  border-radius: 0;
+  box-shadow: 0 0 6px rgb(46, 32, 9);
+  color: #FFE66D;
+  text-shadow: none;
+}
+
+}
