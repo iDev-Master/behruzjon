@@ -105,8 +105,8 @@
   transition-duration: 0.3s;
 }
 
-.resume .func .skills-prog ul li[title]:hover::after {
-  content: attr(title);
+.resume .func .skills-prog ul li[data-title]:hover::after {
+  content: attr(data-title);
   position: absolute;
   right: 15%;
   width: 100px;
