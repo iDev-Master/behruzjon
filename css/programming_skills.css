@@ -272,6 +272,6 @@
   .resume .func .skills-prog ul li[data-title]:hover::after {
     content: attr(data-title);
     position: absolute;
-    right: 20%;
+    right: 23%;
   }
 }
