@@ -138,9 +138,10 @@ button:active {
   } 
 .each_item:hover {
   background: rgb(32, 27, 18);
+  background: white;
   border: none;
   border-radius: 0;
-  box-shadow: 0 0 6px rgb(46, 32, 9);
+  box-shadow: 0 0 6px rgb(243, 225, 196);
   color: #FFE66D;
   text-shadow: none;
 }
