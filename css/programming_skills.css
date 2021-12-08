@@ -105,6 +105,7 @@
   transition-duration: 0.3s;
 }
 
+
 .resume .func .skills-prog ul li[data-title]:hover::after {
   content: attr(data-title);
   position: absolute;
@@ -267,11 +268,4 @@
 }
 .resume .func .interests-items div span {
   display: block;
-}
-@media screen and (min-width:1200px){
-  .resume .func .skills-prog ul li[data-title]:hover::after {
-    content: attr(data-title);
-    position: absolute;
-    right: 22%;
-  }
 }
