@@ -124,7 +124,7 @@ h1, h2 {
 h3 {
   margin-bottom: 0;
 }
-.item-details h3 + p {
+.item-details .job-details h3 + p, .education h3 + p {
   font-style: italic;
 }
 .item-details h3 ~ p {
@@ -266,7 +266,7 @@ b, span { cursor: pointer; }
     float: left;
     margin-right: 20px;
   }
-
+  
   .job-item {
     display: grid;
     grid-template-columns: 1fr 2fr;
@@ -291,3 +291,16 @@ b, span { cursor: pointer; }
     padding: 5px;
   }
 }
+
+
+/* Animation
+------------------------------------*/
+@keyframes circle {
+  from {
+    box-shadow: 0 0 0 0px #3d405b;
+  }
+  to {
+    box-shadow: 0 0 0 6px rgba(61, 64, 91, 0);
+  }
+} 
+
